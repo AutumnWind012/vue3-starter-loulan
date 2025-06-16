@@ -1,10 +1,10 @@
 <script setup lang="ts">
-  import L02Formexample from './L02-formexample.vue';
+  import L03Compositionapi from './L03-compositionapi.vue';
 </script>
 
 <template>
   <div>
-    <L02Formexample></L02Formexample>
+    <L03Compositionapi></L03Compositionapi>
   </div>
 </template>
 
