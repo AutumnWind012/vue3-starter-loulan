@@ -1,10 +1,10 @@
 <script setup lang="ts">
-  import L03Compositionapi from './L03-compositionapi.vue';
+  import L04Componentbinding from './L04-componentbinding.vue';
 </script>
 
 <template>
   <div>
-    <L03Compositionapi></L03Compositionapi>
+    <L04Componentbinding></L04Componentbinding>
   </div>
 </template>
 
