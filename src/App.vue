@@ -1,10 +1,10 @@
 <script setup lang="ts">
-  import L04Componentbinding from './L04-componentbinding.vue';
+  import L05Compoenetlifespan from './L05-componentlifespan.vue';
 </script>
 
 <template>
   <div>
-    <L04Componentbinding></L04Componentbinding>
+    <L05Compoenetlifespan></L05Compoenetlifespan>
   </div>
 </template>
 
