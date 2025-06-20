@@ -1,13 +1,9 @@
 <script setup lang="ts">
-  import L05Compoenetlifespan from './L05-componentlifespan.vue';
+  import L06Routerbasics from './L06-routerbasics.vue';
 </script>
 
 <template>
   <div>
-    <L05Compoenetlifespan></L05Compoenetlifespan>
+    <L06Routerbasics></L06Routerbasics>
   </div>
 </template>
-
-<style>
-
-</style>
