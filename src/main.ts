@@ -5,6 +5,7 @@ import App from './App.vue'
 import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 import FrontPage from './pages/FrontPage.vue'
 import NewsPage from './pages/NewsPage.vue'
+import NewsDetail from './pages/NewsDetail.vue'
 import AboutPage from './pages/AboutPage.vue'
 
 
@@ -14,7 +15,12 @@ const routes = [
   { path: "/", redirect: "/home" },
   { path: "/home", component: FrontPage },
   { path: "/about", component: AboutPage },
-  { path: "/news", component: NewsPage, name: 'news' }
+  {
+    path: "/news", component: NewsPage, name: 'news',
+    children: [
+      {path: "details/:id/:title/:content?", component: NewsDetail }
+    ]
+  }
 ];
 
 // 2. 创建路由器 
