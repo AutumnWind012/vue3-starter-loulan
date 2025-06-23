@@ -7,6 +7,7 @@ import FrontPage from './pages/FrontPage.vue'
 import NewsPage from './pages/NewsPage.vue'
 import NewsDetail from './pages/NewsDetail.vue'
 import AboutPage from './pages/AboutPage.vue'
+import { createPinia } from 'pinia'
 
 
 // 1. 配置路由规则
@@ -18,7 +19,7 @@ const routes = [
   {
     path: "/news", component: NewsPage, name: 'news',
     children: [
-      {path: "details/:id/:title/:content?", component: NewsDetail }
+      { path: "details/:id/:title/:content?", component: NewsDetail }
     ]
   }
 ];
@@ -30,9 +31,14 @@ const router = createRouter({
   routes: routes
 });
 
+// 创建 Pinia
+const pinia = createPinia();
+
 // 3. 加载路由器
+// 加载 Pinia
 const app = createApp(App);
 app.use(router);
+app.use(pinia);
 app.mount('#app');
 
 

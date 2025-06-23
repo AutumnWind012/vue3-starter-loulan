@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  import L06Routerbasics from './L06-routerbasics.vue';
+  import piniabasics from '@/L07-piniabasics.vue';
 </script>
 
 <template>
   <div>
-    <L06Routerbasics></L06Routerbasics>
+    <piniabasics></piniabasics>
   </div>
 </template>
